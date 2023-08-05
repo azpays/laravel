@@ -6,10 +6,10 @@ class CreateJob extends PaymentRequest
 {
     public $amount, $merchant, $tags;
 
-    public function __construct(string $fiat_amount, string $merchant_key, string $tags = null)
+    public function __construct(string $fiat_amount, string $tags = null)
     {
         $this->amount = $fiat_amount;
-        $this->merchant = $merchant_key;
+        $this->merchant = config('azpays.merchant.key');
         $this->tags = $tags;
     }
 

@@ -10,6 +10,7 @@ class CreateResource extends JsonResource
         return [
             'token' => $this->token,
             'fiat_amount' => $this->fiat_amount,
+            'checkout_url' => $this->checkout_url,
             'status' => $this->status,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
