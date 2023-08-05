@@ -1,10 +1,13 @@
 <?php
 namespace AzPays\Laravel\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
 class AzPaysServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../Config/config.php', 'werify');
+        $this->mergeConfigFrom(__DIR__.'/../Config/config.php', 'azpays');
     }
 
     public function boot()
