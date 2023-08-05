@@ -1,6 +1,6 @@
 <?php
 
-namespace Repositories;
+namespace AzPays\Laravel\Repositories;
 
 use AzPays\Laravel\Repositories\Contracts\BaseRequest;
 use AzPays\Laravel\Repositories\Contracts\RequestInterface;
