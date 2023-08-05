@@ -7,8 +7,8 @@ return [
 
     // API
     'api' => [
-        'url' => env('AZPAYS_API_URL', 'https://azpays.com/api'),
-        'sandbox_url' => env('AZPAYS_API_SANDBOX_URL', 'https://sandbox.azpays.com/api'),
+        'url' => env('AZPAYS_API_URL', 'https://azpays.net/api'),
+        'sandbox_url' => env('AZPAYS_API_SANDBOX_URL', 'https://sandbox.azpays.net/api'),
         'key' => env('AZPAYS_API_KEY', 'sandbox'),
         'version' => 'v1',
         'endpoints' => [
