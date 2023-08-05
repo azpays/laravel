@@ -1,7 +1,7 @@
 <?php
 namespace AzPays\Laravel\Jobs\Payment;
 
-use Repositories\PaymentRequest;
+use AzPays\Laravel\Repositories\PaymentRequest;
 
 class CheckoutJob extends PaymentRequest
 {
