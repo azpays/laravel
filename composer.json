@@ -1,0 +1,32 @@
+{
+    "name": "azpays/laravel",
+    "description": "The official repository of AzPays for Laravel",
+    "type": "library",
+    "license": "Apache-2.0 license",
+    "autoload": {
+        "psr-4": {
+            "Azpays\\Laravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad",
+            "email": "hi@trader4.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.1",
+        "briofy/rest-laravel": "dev-main"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.9"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AzPays\\Laravel\\Providers\\AzPaysServiceProvider"
+            ]
+        }
+    }
+}
