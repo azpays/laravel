@@ -1,14 +1,14 @@
 <?php
 
-namespace AzPays\Laravel\Jobs\Payment;
+namespace AzPays\Laravel\Jobs\Subscription;
 
 use AzPays\Laravel\Repositories\PaymentRequest;
 
-class CheckJob extends PaymentRequest
+class IndexJob extends PaymentRequest
 {
-    public $token;
+    public mixed $token;
 
-    public function __construct(string $token)
+    public function __construct(mixed $token)
     {
         $this->token = $token;
     }
@@ -16,9 +16,8 @@ class CheckJob extends PaymentRequest
     public function handle()
     {
         try {
-            $endpoint = $this->generateApiUrl(config('azpays.api.endpoints.payments.check'));
-            str_replace('{token}', $this->token, $endpoint);
-            $req = $this->post($endpoint);
+            $endpoint = $this->generateApiUrl(config('azpays.api.endpoints.subscriptions.index'));
+            $req = $this->get($endpoint, $this->token);
             if ($req->status() === 200) {
                 return $req->json();
             }
@@ -27,7 +26,7 @@ class CheckJob extends PaymentRequest
             if (config('azpays.debug')) {
                 throw new \Exception($e->getMessage());
             }
-            throw new \Exception('Payment check failed');
+            throw new \Exception('Subscriptions list failed');
         }
     }
 }

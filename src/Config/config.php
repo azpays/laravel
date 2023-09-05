@@ -19,8 +19,11 @@ return [
             ],
             'wallets' => [
                 'claim' => 'wallets/claim',
-            ]
-        ]
+            ],
+            'subscriptions' => [
+                'index' => 'subscriptions',
+            ],
+        ],
     ],
 
     // Routes
@@ -32,5 +35,5 @@ return [
     // Merchant
     'merchant' => [
         'key' => env('AZPAYS_MERCHANT_KEY', ''),
-    ]
+    ],
 ];

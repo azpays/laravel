@@ -1,4 +1,5 @@
 <?php
+
 namespace AzPays\Laravel\Http\Resources\Merchant;
 
 use Illuminate\Http\Resources\Json\JsonResource;

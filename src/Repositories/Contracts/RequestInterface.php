@@ -1,4 +1,5 @@
 <?php
+
 namespace AzPays\Laravel\Repositories\Contracts;
 
 interface RequestInterface

@@ -1,9 +1,9 @@
 <?php
+
 namespace AzPays\Laravel\Http\Requests\Wallet;
 
 use AzPays\Laravel\Enums\Wallet\Currency;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class ClaimRequest extends FormRequest
 {
@@ -22,6 +22,4 @@ class ClaimRequest extends FormRequest
             'payment' => 'required|string',
         ];
     }
-
-
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace AzPays\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -12,7 +13,7 @@ class AzPaysServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        if (config('azpays.routes.enabled')){
+        if (config('azpays.routes.enabled')) {
             $this->loadRoutesFrom(__DIR__.'/../Routes/api.php');
         }
 
@@ -22,5 +23,4 @@ class AzPaysServiceProvider extends ServiceProvider
             ], 'azpays-config');
         }
     }
-
 }

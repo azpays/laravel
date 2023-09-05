@@ -1,4 +1,5 @@
 <?php
+
 namespace AzPays\Laravel\Repositories\Contracts;
 
 use Illuminate\Support\Facades\Http;
@@ -7,7 +8,10 @@ abstract class BaseRequest
 {
     public function post($path, $payload = null, $token = null)
     {
-        if ($payload === null) return Http::withHeaders($this->getHeaders($token))->post($path);
+        if ($payload === null) {
+            return Http::withHeaders($this->getHeaders($token))->post($path);
+        }
+
         return Http::withHeaders($this->getHeaders($token))->post($path, $payload);
     }
 

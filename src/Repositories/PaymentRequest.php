@@ -7,10 +7,10 @@ use AzPays\Laravel\Repositories\Contracts\RequestInterface;
 
 abstract class PaymentRequest extends BaseRequest implements RequestInterface
 {
-
     public function generateApiUrl(string $path): string
     {
         $baseUrl = config('azpays.sandbox', false) ? config('azpays.api.sandbox_url') : config('azpays.api.url');
+
         return $baseUrl.'/'.config('azpays.api.version').'/'.$path;
 
     }
@@ -26,6 +26,7 @@ abstract class PaymentRequest extends BaseRequest implements RequestInterface
         if ($token) {
             $headers['Authorization'] = 'Bearer '.$token;
         }
+
         return $headers;
     }
 }

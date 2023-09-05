@@ -1,4 +1,5 @@
 <?php
+
 namespace AzPays\Laravel\Enums\Wallet;
 
 enum Currency: int
@@ -38,6 +39,6 @@ enum Currency: int
     {
         return array_map(function ($value) {
             return is_object($value) ? $value->value : $value;
-        }, (new \ReflectionClass(static::class))->getConstants());
+        }, (new \ReflectionClass(self::class))->getConstants());
     }
 }

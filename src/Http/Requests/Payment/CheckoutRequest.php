@@ -1,8 +1,8 @@
 <?php
+
 namespace AzPays\Laravel\Http\Requests\Payment;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class CheckoutRequest extends FormRequest
 {
@@ -19,6 +19,4 @@ class CheckoutRequest extends FormRequest
             'token' => 'required|string|max:255',
         ];
     }
-
-
 }

@@ -1,8 +1,8 @@
 <?php
+
 namespace AzPays\Laravel\Http\Requests\Payment;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
 class CreateRequest extends FormRequest
 {
@@ -21,6 +21,4 @@ class CreateRequest extends FormRequest
             'tags' => 'nullable|string|max:255',
         ];
     }
-
-
 }
