@@ -1,5 +1,5 @@
 <?php
-namespace App\Enums\Wallet;
+namespace AzPays\Laravel\Enums\Wallet;
 
 enum Currency: int
 {

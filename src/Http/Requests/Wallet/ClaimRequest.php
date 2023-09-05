@@ -1,7 +1,7 @@
 <?php
-namespace AzPays\Laravel\Http\Requests\Payment;
+namespace AzPays\Laravel\Http\Requests\Wallet;
 
-use App\Enums\Wallet\Currency;
+use AzPays\Laravel\Enums\Wallet\Currency;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 

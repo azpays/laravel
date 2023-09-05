@@ -1,9 +1,9 @@
 <?php
 namespace AzPays\Laravel\Http\Controllers;
 
-use AzPays\Laravel\Http\Requests\Payment\ClaimRequest;
-use AzPays\Laravel\Http\Resources\Payment\ClaimResource;
-use AzPays\Laravel\Jobs\Payment\ClaimJob;
+use AzPays\Laravel\Http\Requests\Wallet\ClaimRequest;
+use AzPays\Laravel\Http\Resources\Wallet\ClaimResource;
+use AzPays\Laravel\Jobs\Wallet\ClaimJob;
 use Briofy\RestLaravel\Http\Controllers\RestController;
 use Illuminate\Http\Request;
 

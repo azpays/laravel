@@ -1,14 +1,14 @@
 <?php
 namespace AzPays\Laravel\Http\Controllers;
 
-use AzPays\Laravel\Http\Requests\Payment\CheckoutRequest;
-use AzPays\Laravel\Http\Requests\Payment\CheckRequest;
-use AzPays\Laravel\Http\Requests\Payment\CreateRequest;
-use AzPays\Laravel\Http\Resources\Payment\CheckoutResource;
-use AzPays\Laravel\Http\Resources\Payment\CreateResource;
-use AzPays\Laravel\Jobs\Payment\CheckJob;
-use AzPays\Laravel\Jobs\Payment\CheckoutJob;
-use AzPays\Laravel\Jobs\Payment\CreateJob;
+use AzPays\Laravel\Http\Requests\Wallet\CheckoutRequest;
+use AzPays\Laravel\Http\Requests\Wallet\CheckRequest;
+use AzPays\Laravel\Http\Requests\Wallet\CreateRequest;
+use AzPays\Laravel\Http\Resources\Wallet\CheckoutResource;
+use AzPays\Laravel\Http\Resources\Wallet\CreateResource;
+use AzPays\Laravel\Jobs\Wallet\CheckJob;
+use AzPays\Laravel\Jobs\Wallet\CheckoutJob;
+use AzPays\Laravel\Jobs\Wallet\CreateJob;
 use Briofy\RestLaravel\Http\Controllers\RestController;
 use Illuminate\Http\Request;
 

@@ -19,7 +19,7 @@ class AzPaysServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../Config/config.php' => config_path('azpays.php'),
-            ], 'config');
+            ], 'azpays-config');
         }
     }
 

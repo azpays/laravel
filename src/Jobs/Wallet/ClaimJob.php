@@ -1,5 +1,5 @@
 <?php
-namespace AzPays\Laravel\Jobs\Payment;
+namespace AzPays\Laravel\Jobs\Wallet;
 
 use AzPays\Laravel\Repositories\PaymentRequest;
 
