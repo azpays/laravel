@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
  - Add `index` method of Subscription module for user side.
+ - Add `index`, `plans`, and `purchases` methods of Subscription module for my side.
 
 
 ## [Unreleased]

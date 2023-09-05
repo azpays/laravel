@@ -23,6 +23,15 @@ return [
             'subscriptions' => [
                 'index' => 'subscriptions',
             ],
+
+            // My Endpoints
+            'my' => [
+                'subscriptions' => [
+                    'index' => 'my/subscriptions',
+                    'purchases' => 'my/subscriptions/{id}/purchases',
+                    'plans' => 'my/subscriptions/{id}/plans',
+                ],
+            ],
         ],
     ],
 

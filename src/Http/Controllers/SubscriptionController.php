@@ -3,7 +3,7 @@
 namespace AzPays\Laravel\Http\Controllers;
 
 use AzPays\Laravel\Http\Resources\Subscription\PurchaseResource;
-use AzPays\Laravel\Jobs\Subscription\IndexJob;
+use AzPays\Laravel\Jobs\My\Subscription\IndexJob;
 use Briofy\RestLaravel\Http\Controllers\RestController;
 
 class SubscriptionController extends RestController
